@@ -1,0 +1,20 @@
+|btnstm
+clk => led_signal[0].CLK
+clk => led_signal[1].CLK
+clk => led_signal[2].CLK
+clk => led_signal[3].CLK
+clk => ep~1.DATAIN
+rst => led_signal[0].ACLR
+rst => led_signal[1].ACLR
+rst => led_signal[2].ACLR
+rst => led_signal[3].ACLR
+rst => ep~3.DATAIN
+btn => es.idle.DATAA
+btn => es.compte.DATAB
+btn => Selector0.IN2
+led[0] <= led_signal[0].DB_MAX_OUTPUT_PORT_TYPE
+led[1] <= led_signal[1].DB_MAX_OUTPUT_PORT_TYPE
+led[2] <= led_signal[2].DB_MAX_OUTPUT_PORT_TYPE
+led[3] <= led_signal[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

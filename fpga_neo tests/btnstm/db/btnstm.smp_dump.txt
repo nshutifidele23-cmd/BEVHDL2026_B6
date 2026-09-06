@@ -1,0 +1,6 @@
+
+State Machine - |btnstm|ep
+Name ep.arret ep.compte ep.idle 
+ep.idle 0 0 0 
+ep.compte 0 1 1 
+ep.arret 1 0 1 
