@@ -1,5 +1,5 @@
 Analysis & Synthesis report for btnstm
-Sun Sep 06 22:45:27 2026
+Tue Sep 08 08:32:57 2026
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -44,7 +44,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Sep 06 22:45:27 2026       ;
+; Analysis & Synthesis Status        ; Successful - Tue Sep 08 08:32:57 2026       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; btnstm                                      ;
 ; Top-level Entity Name              ; btnstm                                      ;
@@ -164,13 +164,13 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                     ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                              ; Library ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------+---------+
-; btnstm.vhd                       ; yes             ; User VHDL File  ; C:/Users/audib/Desktop/fpga_neo project/btnstm/btnstm.vhd ;         ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                   ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                            ; Library ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
+; btnstm.vhd                       ; yes             ; User VHDL File  ; C:/Users/audib/Desktop/BE_VHDL/BE_VHDL/fpga_neo tests/btnstm/btnstm.vhd ;         ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -286,15 +286,15 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Sep 06 22:45:17 2026
+    Info: Processing started: Tue Sep 08 08:32:46 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off btnstm -c btnstm
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 14 of the 14 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file btnstm.vhd
-    Info (12022): Found design unit 1: btnstm-bhv File: C:/Users/audib/Desktop/fpga_neo project/btnstm/btnstm.vhd Line: 14
-    Info (12023): Found entity 1: btnstm File: C:/Users/audib/Desktop/fpga_neo project/btnstm/btnstm.vhd Line: 6
+    Info (12022): Found design unit 1: btnstm-bhv File: C:/Users/audib/Desktop/BE_VHDL/BE_VHDL/fpga_neo tests/btnstm/btnstm.vhd Line: 14
+    Info (12023): Found entity 1: btnstm File: C:/Users/audib/Desktop/BE_VHDL/BE_VHDL/fpga_neo tests/btnstm/btnstm.vhd Line: 6
 Info (12127): Elaborating entity "btnstm" for the top level hierarchy
-Warning (10492): VHDL Process Statement warning at btnstm.vhd(66): signal "led_signal" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/audib/Desktop/fpga_neo project/btnstm/btnstm.vhd Line: 66
+Warning (10492): VHDL Process Statement warning at btnstm.vhd(66): signal "led_signal" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/audib/Desktop/BE_VHDL/BE_VHDL/fpga_neo tests/btnstm/btnstm.vhd Line: 66
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 1 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -304,9 +304,9 @@ Info (21057): Implemented 14 device resources after synthesis - the final resour
     Info (21059): Implemented 4 output pins
     Info (21061): Implemented 7 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4855 megabytes
-    Info: Processing ended: Sun Sep 06 22:45:27 2026
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:22
+    Info: Peak virtual memory: 4853 megabytes
+    Info: Processing ended: Tue Sep 08 08:32:57 2026
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:23
 
 

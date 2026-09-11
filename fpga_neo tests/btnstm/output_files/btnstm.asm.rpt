@@ -1,5 +1,5 @@
 Assembler report for btnstm
-Sun Sep 06 22:45:35 2026
+Tue Sep 08 08:33:05 2026
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -10,7 +10,7 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/audib/Desktop/fpga_neo project/btnstm/output_files/btnstm.sof
+  5. Assembler Device Options: C:/Users/audib/Desktop/BE_VHDL/BE_VHDL/fpga_neo tests/btnstm/output_files/btnstm.sof
   6. Assembler Messages
 
 
@@ -37,7 +37,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Sun Sep 06 22:45:35 2026 ;
+; Assembler Status      ; Successful - Tue Sep 08 08:33:05 2026 ;
 ; Revision Name         ; btnstm                                ;
 ; Top-level Entity Name ; btnstm                                ;
 ; Family                ; Cyclone IV E                          ;
@@ -52,23 +52,23 @@ refer to the applicable agreement for further details.
 +--------+---------+---------------+
 
 
-+------------------------------------------------------------------------+
-; Assembler Generated Files                                              ;
-+------------------------------------------------------------------------+
-; File Name                                                              ;
-+------------------------------------------------------------------------+
-; C:/Users/audib/Desktop/fpga_neo project/btnstm/output_files/btnstm.sof ;
-+------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                            ;
++--------------------------------------------------------------------------------------+
+; File Name                                                                            ;
++--------------------------------------------------------------------------------------+
+; C:/Users/audib/Desktop/BE_VHDL/BE_VHDL/fpga_neo tests/btnstm/output_files/btnstm.sof ;
++--------------------------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/audib/Desktop/fpga_neo project/btnstm/output_files/btnstm.sof ;
-+----------------+---------------------------------------------------------------------------------+
-; Option         ; Setting                                                                         ;
-+----------------+---------------------------------------------------------------------------------+
-; JTAG usercode  ; 0x00135E81                                                                      ;
-; Checksum       ; 0x00135E81                                                                      ;
-+----------------+---------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/audib/Desktop/BE_VHDL/BE_VHDL/fpga_neo tests/btnstm/output_files/btnstm.sof ;
++----------------+-----------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                       ;
++----------------+-----------------------------------------------------------------------------------------------+
+; JTAG usercode  ; 0x00135E81                                                                                    ;
+; Checksum       ; 0x00135E81                                                                                    ;
++----------------+-----------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -77,14 +77,14 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Sep 06 22:45:34 2026
+    Info: Processing started: Tue Sep 08 08:33:04 2026
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off btnstm -c btnstm
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4678 megabytes
-    Info: Processing ended: Sun Sep 06 22:45:35 2026
+    Info: Peak virtual memory: 4681 megabytes
+    Info: Processing ended: Tue Sep 08 08:33:05 2026
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

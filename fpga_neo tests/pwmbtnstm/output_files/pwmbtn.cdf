@@ -1,10 +1,10 @@
-/* Quartus Prime Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition */
+/* Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition */
 JedecChain;
 	FileRevision(JESD32A);
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE22F17) Path("C:/Users/audib/Desktop/fpga_neo project/pwmbtnstm/output_files/") File("pwmbtn.sof") MfrSpec(OpMask(1));
+		Device PartName(EP4CE22F17) Path("C:/Users/audib/Desktop/BE_VHDL/BE_VHDL/fpga_neo tests/pwmbtnstm/output_files/") File("pwmbtn.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

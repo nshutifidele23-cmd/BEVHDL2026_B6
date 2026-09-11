@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
--- DATE "09/06/2026 22:45:40"
+-- DATE "09/08/2026 08:33:10"
 
 -- 
 -- Device: Altera EP4CE22F17C6 Package FBGA256
@@ -81,7 +81,7 @@ ENTITY 	btnstm IS
 	clk : IN std_logic;
 	rst : IN std_logic;
 	btn : IN std_logic;
-	led : OUT std_logic_vector(3 DOWNTO 0)
+	led : BUFFER std_logic_vector(3 DOWNTO 0)
 	);
 END btnstm;
 

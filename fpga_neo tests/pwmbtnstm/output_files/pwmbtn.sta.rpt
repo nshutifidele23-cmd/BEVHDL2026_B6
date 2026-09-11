@@ -1,6 +1,6 @@
 Timing Analyzer report for pwmbtn
-Sun Sep  6 22:17:09 2026
-Quartus Prime Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
+Tue Sep 08 08:27:01 2026
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
 ---------------------
@@ -60,35 +60,34 @@ Quartus Prime Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2025  Altera Corporation. All rights reserved.
-Your use of Altera Corporation's design tools, logic functions 
-and other software and tools, and any partner logic 
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
-to the terms and conditions of the Altera Program License 
-Subscription Agreement, the Altera Quartus Prime License Agreement,
-the Altera IP License Agreement, or other applicable license
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
-Altera and sold by Altera or its authorized distributors.  Please
-refer to the Altera Software License Subscription Agreements 
-on the Quartus Prime software download page.
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
 
 
 
-+---------------------------------------------------------------------------------+
-; Timing Analyzer Summary                                                         ;
-+-----------------------+---------------------------------------------------------+
-; Quartus Prime Version ; Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition ;
-; Timing Analyzer       ; Legacy Timing Analyzer                                  ;
-; Revision Name         ; pwmbtn                                                  ;
-; Device Family         ; Cyclone IV E                                            ;
-; Device Name           ; EP4CE22F17C6                                            ;
-; Timing Models         ; Final                                                   ;
-; Delay Model           ; Combined                                                ;
-; Rise/Fall Delays      ; Enabled                                                 ;
-+-----------------------+---------------------------------------------------------+
++-----------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                     ;
++-----------------------+-----------------------------------------------------+
+; Quartus Prime Version ; Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Timing Analyzer       ; Legacy Timing Analyzer                              ;
+; Revision Name         ; pwmbtn                                              ;
+; Device Family         ; Cyclone IV E                                        ;
+; Device Name           ; EP4CE22F17C6                                        ;
+; Timing Models         ; Final                                               ;
+; Delay Model           ; Combined                                            ;
+; Rise/Fall Delays      ; Enabled                                             ;
++-----------------------+-----------------------------------------------------+
 
 
 +------------------------------------------+
@@ -99,13 +98,13 @@ on the Quartus Prime software download page.
 ; Number detected on machine ; 20          ;
 ; Maximum allowed            ; 14          ;
 ;                            ;             ;
-; Average used               ; 1.10        ;
+; Average used               ; 1.08        ;
 ; Maximum used               ; 14          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   1.4%      ;
-;     Processors 3-14        ;   0.7%      ;
+;     Processor 2            ;   1.5%      ;
+;     Processors 3-14        ;   0.5%      ;
 +----------------------------+-------------+
 
 
@@ -299,8 +298,8 @@ No paths to report.
 ; 0.559 ; timer[2]    ; timer[2]    ; clk          ; clk         ; 0.000        ; 0.063      ; 0.779      ;
 ; 0.560 ; timer[4]    ; timer[4]    ; clk          ; clk         ; 0.000        ; 0.063      ; 0.780      ;
 ; 0.561 ; timer_2[4]  ; timer_2[4]  ; clk          ; clk         ; 0.000        ; 0.063      ; 0.781      ;
-; 0.569 ; timer[10]   ; timer[10]   ; clk          ; clk         ; 0.000        ; 0.063      ; 0.789      ;
 ; 0.569 ; timer_2[15] ; timer_2[15] ; clk          ; clk         ; 0.000        ; 0.062      ; 0.788      ;
+; 0.569 ; timer[10]   ; timer[10]   ; clk          ; clk         ; 0.000        ; 0.063      ; 0.789      ;
 ; 0.570 ; timer_2[23] ; timer_2[23] ; clk          ; clk         ; 0.000        ; 0.062      ; 0.789      ;
 ; 0.570 ; timer_2[17] ; timer_2[17] ; clk          ; clk         ; 0.000        ; 0.062      ; 0.789      ;
 ; 0.600 ; augmente[4] ; augmente[4] ; clk          ; clk         ; 0.000        ; 0.062      ; 0.819      ;
@@ -321,9 +320,9 @@ No paths to report.
 ; 0.860 ; timer[0]    ; timer[2]    ; clk          ; clk         ; 0.000        ; 0.063      ; 1.080      ;
 ; 0.861 ; timer_2[6]  ; timer_2[7]  ; clk          ; clk         ; 0.000        ; 0.063      ; 1.081      ;
 ; 0.862 ; timer_2[24] ; timer_2[24] ; clk          ; clk         ; 0.000        ; 0.062      ; 1.081      ;
+; 0.863 ; timer_2[21] ; timer_2[21] ; clk          ; clk         ; 0.000        ; 0.062      ; 1.082      ;
 ; 0.863 ; timer[8]    ; timer[10]   ; clk          ; clk         ; 0.000        ; 0.063      ; 1.083      ;
 ; 0.863 ; timer_2[6]  ; timer_2[8]  ; clk          ; clk         ; 0.000        ; 0.063      ; 1.083      ;
-; 0.863 ; timer_2[21] ; timer_2[21] ; clk          ; clk         ; 0.000        ; 0.062      ; 1.082      ;
 ; 0.867 ; timer_2[6]  ; timer_2[6]  ; clk          ; clk         ; 0.000        ; 0.063      ; 1.087      ;
 ; 0.874 ; augmente[4] ; augmente[5] ; clk          ; clk         ; 0.000        ; 0.062      ; 1.093      ;
 ; 0.932 ; augmente[3] ; augmente[3] ; clk          ; clk         ; 0.000        ; 0.062      ; 1.151      ;
@@ -348,8 +347,8 @@ No paths to report.
 ; 0.978 ; augmente[0] ; augmente[1] ; clk          ; clk         ; 0.000        ; 0.062      ; 1.197      ;
 ; 1.000 ; timer_2[14] ; timer_2[15] ; clk          ; clk         ; 0.000        ; 0.063      ; 1.220      ;
 ; 1.032 ; augmente[2] ; augmente[3] ; clk          ; clk         ; 0.000        ; 0.062      ; 1.251      ;
-; 1.035 ; augmente[1] ; augmente[2] ; clk          ; clk         ; 0.000        ; 0.062      ; 1.254      ;
 ; 1.035 ; timer_2[22] ; timer_2[23] ; clk          ; clk         ; 0.000        ; 0.063      ; 1.255      ;
+; 1.035 ; augmente[1] ; augmente[2] ; clk          ; clk         ; 0.000        ; 0.062      ; 1.254      ;
 ; 1.036 ; timer_2[16] ; timer_2[17] ; clk          ; clk         ; 0.000        ; 0.063      ; 1.256      ;
 ; 1.037 ; augmente[1] ; augmente[3] ; clk          ; clk         ; 0.000        ; 0.062      ; 1.256      ;
 ; 1.048 ; timer[5]    ; timer[10]   ; clk          ; clk         ; 0.000        ; 0.063      ; 1.268      ;
@@ -1095,8 +1094,8 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +--------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
-    Info: Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
-    Info: Processing started: Sun Sep  6 22:17:07 2026
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Tue Sep 08 08:26:59 2026
 Info: Command: quartus_sta pwmbtn -c pwmbtn
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -1168,8 +1167,8 @@ Info (332146): Worst-case minimum pulse width slack is -3.000
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4903 megabytes
-    Info: Processing ended: Sun Sep  6 22:17:09 2026
+    Info: Peak virtual memory: 4883 megabytes
+    Info: Processing ended: Tue Sep 08 08:27:01 2026
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 

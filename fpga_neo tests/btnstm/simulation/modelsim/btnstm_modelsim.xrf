@@ -1,10 +1,10 @@
 vendor_name = ModelSim
-source_file = 1, C:/Users/audib/Desktop/fpga_neo project/btnstm/btnstm.vhd
+source_file = 1, C:/Users/audib/Desktop/BE_VHDL/BE_VHDL/fpga_neo tests/btnstm/btnstm.vhd
 source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/timing_b.vhd
 source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/timing_p.vhd
-source_file = 1, C:/Users/audib/Desktop/fpga_neo project/btnstm/db/btnstm.cbx.xml
+source_file = 1, C:/Users/audib/Desktop/BE_VHDL/BE_VHDL/fpga_neo tests/btnstm/db/btnstm.cbx.xml
 design_name = hard_block
 design_name = btnstm
 instance = comp, \led[0]~output\, led[0]~output, btnstm, 1

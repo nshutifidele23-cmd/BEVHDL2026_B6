@@ -136,6 +136,6 @@ btn => augmente[4].ENA
 btn => augmente[3].ENA
 btn => augmente[2].ENA
 btn => augmente[1].ENA
-pwm <= ep.DB_MAX_OUTPUT_PORT_TYPE
+pwm << ep.DB_MAX_OUTPUT_PORT_TYPE
 
 
