@@ -1,0 +1,8 @@
+
+State Machine - |compass_choix|ep
+Name ep.attente_mono ep.attente_cont ep.mono ep.continue ep.idle 
+ep.idle 0 0 0 0 0 
+ep.continue 0 0 0 1 1 
+ep.mono 0 0 1 0 1 
+ep.attente_cont 0 1 0 0 1 
+ep.attente_mono 1 0 0 0 1 
