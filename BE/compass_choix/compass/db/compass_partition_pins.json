@@ -1,0 +1,77 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "pwm",
+					"strict" : false
+				},
+				{
+					"name" : "echant",
+					"strict" : false
+				},
+				{
+					"name" : "registre[0]",
+					"strict" : false
+				},
+				{
+					"name" : "registre[1]",
+					"strict" : false
+				},
+				{
+					"name" : "registre[2]",
+					"strict" : false
+				},
+				{
+					"name" : "registre[3]",
+					"strict" : false
+				},
+				{
+					"name" : "registre[4]",
+					"strict" : false
+				},
+				{
+					"name" : "registre[5]",
+					"strict" : false
+				},
+				{
+					"name" : "registre[6]",
+					"strict" : false
+				},
+				{
+					"name" : "registre[7]",
+					"strict" : false
+				},
+				{
+					"name" : "registre[8]",
+					"strict" : false
+				},
+				{
+					"name" : "start_stop",
+					"strict" : false
+				},
+				{
+					"name" : "continu",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				},
+				{
+					"name" : "switch",
+					"strict" : false
+				},
+				{
+					"name" : "btn",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
