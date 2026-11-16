@@ -109,23 +109,23 @@ BEGIN
 
 	-- test 1 : mot 0x800, dans les butées
 	WAIT FOR 101 ms;
-	ASSERT angle_barre_sortie = x"00000800"
+	ASSERT angle_barre_sortie = x"00000800";
 	
 
 	-- test 2 : mot 0x005 (< butee_g), sens = 1 : pwm doit rester actif
 	word <= x"005";
 	sens <= '1';
 	WAIT FOR 100 ms;
-	ASSERT angle_barre_sortie = x"00000005"
+	ASSERT angle_barre_sortie = x"00000005";
 	
 	WAIT UNTIL pwm = '1' FOR 2 ms;
-	ASSERT pwm = '1'
+	ASSERT pwm = '1';
 		
 
 	-- test 3 : même mot, sens = 0 : pwm doit être coupé
 	sens <= '0';
 	WAIT FOR 2 ms;
-	ASSERT pwm = '0'
+	ASSERT pwm = '0';
 	
 	
 	WAIT;

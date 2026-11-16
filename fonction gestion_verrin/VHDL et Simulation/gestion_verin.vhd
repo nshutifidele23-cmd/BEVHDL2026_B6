@@ -33,6 +33,7 @@ signal angle_barre : std_logic_vector (31 downto 0);
 type state_type is (idle,conversion);
 signal  cpt : std_logic;
 signal signal_1M : std_logic;
+signal signal_10k : std_logic; --generation 10KhZ
 signal ep : state_type;
 signal es : state_type;
 signal angle_mem : std_logic_vector (31 downto 0);
@@ -157,6 +158,31 @@ end if;
 end process gene_1M;
 
 
+--generation 10K
+
+gene_10K: process (clk,rst) 
+variable timer_3 : integer range 0 to 4999;
+
+begin
+if (rst = '0') then
+	timer_3 := 0;
+	signal_10k <= '0';
+
+elsif (rising_edge(clk)) then 
+
+	if (timer_3 = 4999) then
+			timer_3 := 0;			
+	else 
+		timer_3 := timer_3 + 1;
+	end if;
+	
+	if (timer_3 >= 8 and timer_3 <= 2500) then
+		signal_10k <= '1';
+	else
+		signal_10k <= '0';
+	end if;
+end if;
+end process gene_10k;
 
 --process sequentielle pour faire avancer la machine à etat
 
@@ -197,19 +223,22 @@ end process pilote_adc;
 
 process (clk, rst)
 variable compte : integer range 0 to 15;
-variable signal_1M_prev : std_logic;
+--variable signal_1M_prev : std_logic;
+variable signal_10k_prev : std_logic;
 variable reg : std_logic_vector (11 downto 0);
 begin
 if (rst = '0') then
     compte := 0;
-    signal_1M_prev := '0';
+    --signal_1M_prev := '0';
+	  signal_10k_prev := '0';
     reg := (others => '0');
     fin_conversion <= '0';
     angle_mem <= (others => '0');
 elsif (rising_edge(clk)) then
     fin_conversion <= '0';
     if (ep = conversion) then
-        if (signal_1M = '1' and signal_1M_prev = '0') then
+        --if (signal_1M = '1' and signal_1M_prev = '0') then
+		   if(signal_10k = '1' and signal_10k_prev = '0') then
             reg := reg(10 downto 0) & dout;      -- rec_dec
             if (compte = 14) then                -- compt_fronts
                 compte := 0;
@@ -219,10 +248,12 @@ elsif (rising_edge(clk)) then
                 compte := compte + 1;
             end if;
         end if;
-        signal_1M_prev := signal_1M;
+      --  signal_1M_prev := signal_1M;
+		   signal_10k_prev := signal_10k;
     else
         compte := 0;
-        signal_1M_prev := '0';
+        --signal_1M_prev := '0';
+		  signal_10k_prev := '0';
     end if;
 end if;
 end process;
@@ -233,5 +264,6 @@ pwm <= '0' when (fin_course_g = '1' and sens = '0') or
        else pwm_signal;
 angle_barre_sortie <= angle_mem;
 cs   <= '0' when ep = conversion else '1';
-clk_adc <= signal_1M when ep = conversion else '0';
+--clk_adc <= signal_1M when ep = conversion else '0';
+clk_adc <= signal_10k when ep = conversion else '0';
 end bhv;
