@@ -1,0 +1,268 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect 56 272 224 288)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "dout" (rect 5 0 27 17)(font "Intel Clear" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect -40 264 16 288))
+)
+(pin
+	(input)
+	(rect 104 312 272 328)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "sens" (rect 5 0 27 17)(font "Intel Clear" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 0 328 56 352))
+)
+(pin
+	(input)
+	(rect 152 344 320 360)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "clk" (rect 5 0 20 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 72 344 128 368))
+)
+(pin
+	(input)
+	(rect 160 384 328 400)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "reset" (rect 5 0 29 17)(font "Intel Clear" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 72 384 136 408))
+)
+(pin
+	(output)
+	(rect 144 232 320 248)
+	(text "OUTPUT" (rect 137 6 175 16)(font "Arial" (font_size 6)))
+	(text "clk_adc" (rect 5 -1 42 16)(font "Intel Clear" ))
+	(pt 176 8)
+	(drawing
+		(line (pt 176 8)(pt 124 8))
+		(line (pt 124 12)(pt 98 12))
+		(line (pt 124 4)(pt 98 4))
+		(line (pt 124 4)(pt 124 12))
+		(line (pt 98 12)(pt 94 8))
+		(line (pt 94 8)(pt 98 4))
+		(line (pt 98 4)(pt 94 8))
+	)
+	(rotate180)
+	(annotation_block (location)(rect 128 184 192 208))
+)
+(pin
+	(output)
+	(rect 80 256 256 272)
+	(text "OUTPUT" (rect 137 6 175 16)(font "Arial" (font_size 6)))
+	(text "cs" (rect 5 -1 15 16)(font "Intel Clear" ))
+	(pt 176 8)
+	(drawing
+		(line (pt 176 8)(pt 124 8))
+		(line (pt 124 12)(pt 98 12))
+		(line (pt 124 4)(pt 98 4))
+		(line (pt 124 4)(pt 124 12))
+		(line (pt 98 12)(pt 94 8))
+		(line (pt 94 8)(pt 98 4))
+		(line (pt 98 4)(pt 94 8))
+	)
+	(rotate180)
+	(annotation_block (location)(rect 24 216 80 240))
+)
+(pin
+	(output)
+	(rect 88 288 264 304)
+	(text "OUTPUT" (rect 137 6 175 16)(font "Arial" (font_size 6)))
+	(text "pwm" (rect 5 -1 29 16)(font "Intel Clear" ))
+	(pt 176 8)
+	(drawing
+		(line (pt 176 8)(pt 124 8))
+		(line (pt 124 12)(pt 98 12))
+		(line (pt 124 4)(pt 98 4))
+		(line (pt 124 4)(pt 124 12))
+		(line (pt 98 12)(pt 94 8))
+		(line (pt 94 8)(pt 98 4))
+		(line (pt 98 4)(pt 94 8))
+	)
+	(rotate180)
+	(annotation_block (location)(rect -16 296 48 320))
+)
+(symbol
+	(rect 344 176 920 424)
+	(text "avalon_gestion_verrin_sopc" (rect 207 -1 392 15)(font "Arial" (font_size 10)))
+	(text "inst1" (rect 8 232 30 249)(font "Intel Clear" ))
+	(port
+		(pt 0 104)
+		(input)
+		(text "avalon_gestion_verrin_0_conduit_end_dout" (rect 0 0 248 14)(font "Arial" (font_size 8)))
+		(text "avalon_gestion_verrin_0_conduit_end_dout" (rect 4 93 252 107)(font "Arial" (font_size 8)))
+		(line (pt 0 104)(pt 256 104))
+	)
+	(port
+		(pt 0 136)
+		(input)
+		(text "avalon_gestion_verrin_0_conduit_end_sens" (rect 0 0 252 14)(font "Arial" (font_size 8)))
+		(text "avalon_gestion_verrin_0_conduit_end_sens" (rect 4 125 256 139)(font "Arial" (font_size 8)))
+		(line (pt 0 136)(pt 256 136))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "clk_clk" (rect 0 0 37 14)(font "Arial" (font_size 8)))
+		(text "clk_clk" (rect 4 165 41 179)(font "Arial" (font_size 8)))
+		(line (pt 0 176)(pt 256 176))
+	)
+	(port
+		(pt 0 216)
+		(input)
+		(text "reset_reset_n" (rect 0 0 80 14)(font "Arial" (font_size 8)))
+		(text "reset_reset_n" (rect 4 205 84 219)(font "Arial" (font_size 8)))
+		(line (pt 0 216)(pt 256 216))
+	)
+	(port
+		(pt 0 72)
+		(output)
+		(text "avalon_gestion_verrin_0_conduit_end_clk_adc" (rect 0 0 267 14)(font "Arial" (font_size 8)))
+		(text "avalon_gestion_verrin_0_conduit_end_clk_adc" (rect 4 61 271 75)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 256 72))
+	)
+	(port
+		(pt 0 88)
+		(output)
+		(text "avalon_gestion_verrin_0_conduit_end_cs" (rect 0 0 238 14)(font "Arial" (font_size 8)))
+		(text "avalon_gestion_verrin_0_conduit_end_cs" (rect 4 77 242 91)(font "Arial" (font_size 8)))
+		(line (pt 0 88)(pt 256 88))
+	)
+	(port
+		(pt 0 120)
+		(output)
+		(text "avalon_gestion_verrin_0_conduit_end_pwm" (rect 0 0 252 14)(font "Arial" (font_size 8)))
+		(text "avalon_gestion_verrin_0_conduit_end_pwm" (rect 4 109 256 123)(font "Arial" (font_size 8)))
+		(line (pt 0 120)(pt 256 120))
+	)
+	(drawing
+		(text "avalon_gestion_verrin_0_conduit_end" (rect 36 43 283 58)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk_adc" (rect 261 67 298 79)(font "Arial" (color 0 0 0)))
+		(text "cs" (rect 261 83 272 95)(font "Arial" (color 0 0 0)))
+		(text "dout" (rect 261 99 282 111)(font "Arial" (color 0 0 0)))
+		(text "pwm" (rect 261 115 283 127)(font "Arial" (color 0 0 0)))
+		(text "sens" (rect 261 131 284 143)(font "Arial" (color 0 0 0)))
+		(text "clk" (rect 241 147 258 162)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 261 171 275 183)(font "Arial" (color 0 0 0)))
+		(text "reset" (rect 227 187 260 202)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "reset_n" (rect 261 211 297 223)(font "Arial" (color 0 0 0)))
+		(text " avalon_gestion_verrin_sopc " (rect 451 232 596 244)(font "Arial" ))
+		(line (pt 256 32)(pt 320 32))
+		(line (pt 320 32)(pt 320 232))
+		(line (pt 256 232)(pt 320 232))
+		(line (pt 256 32)(pt 256 232))
+		(line (pt 257 52)(pt 257 140))
+		(line (pt 258 52)(pt 258 140))
+		(line (pt 257 156)(pt 257 180))
+		(line (pt 258 156)(pt 258 180))
+		(line (pt 257 196)(pt 257 220))
+		(line (pt 258 196)(pt 258 220))
+		(line (pt 0 0)(pt 576 0))
+		(line (pt 576 0)(pt 576 248))
+		(line (pt 0 248)(pt 576 248))
+		(line (pt 0 0)(pt 0 248))
+	)
+)
+(connector
+	(pt 272 320)
+	(pt 320 320)
+)
+(connector
+	(pt 320 320)
+	(pt 320 312)
+)
+(connector
+	(pt 344 312)
+	(pt 320 312)
+)
+(connector
+	(pt 344 248)
+	(pt 328 248)
+)
+(connector
+	(pt 328 248)
+	(pt 328 240)
+)
+(connector
+	(pt 328 240)
+	(pt 320 240)
+)
+(connector
+	(pt 344 264)
+	(pt 256 264)
+)
+(connector
+	(pt 344 280)
+	(pt 224 280)
+)
+(connector
+	(pt 344 296)
+	(pt 264 296)
+)
+(connector
+	(pt 344 352)
+	(pt 320 352)
+)
+(connector
+	(pt 344 392)
+	(pt 328 392)
+)
